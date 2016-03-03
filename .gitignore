@@ -42,6 +42,7 @@ $RECYCLE.BIN/
 *.cab
 *.msi
 *.msm
+/public
 *.msp
 
 # Windows shortcuts
