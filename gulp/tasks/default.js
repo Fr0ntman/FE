@@ -13,8 +13,9 @@ gulp.task('default', () => {
 gulp.task('build', ['clean'], () => {
   runSequence(
     [
+      'copy',
       'styles',
-      'jade',
+      'slim',
       'scripts'
     ]
   )

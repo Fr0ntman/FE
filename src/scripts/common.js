@@ -1,2 +1,3 @@
-const a = 0;
-console.log(a);
+/**
+ * Created by Kayun on 04.03.2016.
+ */

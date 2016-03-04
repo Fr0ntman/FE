@@ -25,7 +25,7 @@ module.exports = {
       path.join(__dirname, 'src/scripts'),
       path.join(__dirname, 'src/templates')
     ],
-    extensions: ['', '.js', '.jade'],
+    extensions: ['', '.js', '.slm'],
     alias: {}
   },
 
@@ -49,10 +49,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'eslint',
         exclude: /node_modules/
-      },
-      {
-        test: /\.jade$/,
-        loader: 'jade'
       }
     ]
   },
@@ -66,7 +62,7 @@ module.exports = {
     new webpack.ProvidePlugin({}),
     new WebpackNotifierPlugin({
       title: 'Webpack',
-      alwaysNotify: true
+      alwaysNotify: false
     })
   ],
 
