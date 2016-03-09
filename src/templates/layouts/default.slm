@@ -1,0 +1,8 @@
+doctype html
+html(lang="ru-RU")
+  = partial('../partials/head')
+
+  body
+    .main
+      = partial('../partials/header')
+      = content('main')
