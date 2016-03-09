@@ -12,7 +12,7 @@ module.exports = {
 
   output: {
     path: __dirname + '/public/assets/scripts',
-    filename: '[name].js',
+    filename: '[name].min.js',
     library: '[name]'
   },
 
