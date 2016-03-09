@@ -1,0 +1,2 @@
+- this.jv0 = "javascript: void(0)"
+- this.timestamp = Date.now()

@@ -1,0 +1,16 @@
+.button
+  padding: 0 10px
+  display: inline-block
+  line-height: 18px
+  color: $color-dark-gray
+  font-size: 10px
+  background-color: transparent
+  text-transform: uppercase
+  text-decoration: none
+  border: 2px solid rgba(#000, .25)
+  border-radius: 2px
+  @include transition(border-color color)
+
+  &:hover
+    border-color: rgba($color-red, .5)
+    color: $color-red

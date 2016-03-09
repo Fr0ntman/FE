@@ -49,6 +49,5 @@
     "webpack-notifier": "^1.3.0"
   },
   "dependencies": {
-    "normalize.scss": "^0.1.0"
   }
 }

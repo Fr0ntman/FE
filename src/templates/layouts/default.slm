@@ -1,3 +1,5 @@
+= partial('../helpers/variables')
+
 doctype html
 html(lang="ru-RU")
   = partial('../partials/head')

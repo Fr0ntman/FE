@@ -9,7 +9,9 @@ body
 .main
   position: relative
   padding-top: 60px
-  @include size(100%)
+  width: 100%
+  min-height: 100%
+  background-color: #efefef
 
 .container
   padding: 0 30px
@@ -19,11 +21,11 @@ body
   @extend %clearfix
 
 .content
-  background-color: #efefef
+  padding: 20px 0 50px
   width: 100%
 
 .bg
-  @include size(100%)
+  width: 100%
   background:
     image: url('/assets/images/bg.jpg')
     position: 50% 50%
