@@ -5,7 +5,7 @@
   - this.pageId = 1
 
 = content('main')
-  .bg
+  .bg.js-bg
   .welcome
     .welcome-inner
       h1 Привет!
@@ -19,3 +19,10 @@
         | Своей целью мы видим снижение барьера входа русскоязычных людей в науку и образовательные курсы на других языках.
 
       .welcome-end
+
+  javascript:
+    var windowHight = window.innerHeight,
+        headerHight = document.querySelector('.js-header').offsetHeight,
+        bg = document.querySelector('.js-bg');
+
+    bg.style.height = windowHight - headerHight + 'px'
