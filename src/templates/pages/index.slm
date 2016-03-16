@@ -1,5 +1,5 @@
 = extend('../layouts/default')
-
+ 
 = content('head', 'prepend')
   - this.title = 'OpenMIT About'
   - this.pageId = 1

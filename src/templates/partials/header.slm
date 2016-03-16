@@ -6,6 +6,17 @@ header.header.js-header
       img.logo(src="/assets/images/logo.png")
 
     nav.menu.right
-      a.menu__item(href="/" class=(this.pageId == 1 ? "menu__item_state_active" : "")) О нас
-      a.menu__item(href="/news.html" class=(this.pageId == 2 ? "menu__item_state_active" : "")) Новости
-      a.menu__item(href="http://wiki.openmit.ru/" class=(this.pageId == 3 ? "menu__item_state_active" : "")) Переводы
+      - if this.pageId == 1
+        span.menu__item.menu__item_state_active О нас
+      - else
+        a.menu__item(href="/") О нас
+        
+      - if this.pageId == 2
+        span.menu__item.menu__item_state_active Новости
+      - else
+        a.menu__item(href="/news.html") Новости
+        
+      - if this.pageId == 3
+        span.menu__item.menu__item_state_active Переводы
+      - else
+        a.menu__item(href="http://wiki.openmit.ru/") Переводы
