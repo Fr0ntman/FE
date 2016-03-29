@@ -1,0 +1,10 @@
+mixin nav(items)
+    nav.menu.right
+        each item in items
+            - //pageId определяется в head каждой страницы
+            if pageId == item.id
+                span.menu__item.menu__item_state_active= item.label
+                    +icon(item.icon)
+            else
+                a.menu__item(href= item.href)= item.label
+                    +icon(item.icon)

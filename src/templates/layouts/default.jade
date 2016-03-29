@@ -1,0 +1,12 @@
+include ../helpers/variables
+include ../helpers/mixins
+
+doctype html
+html(lang="ru-RU")
+  include ../partials/head
+
+  body
+    .main(class= mainClass ? mainClass : "")
+      include ../partials/header
+      block content
+      include ../partials/footer

@@ -1,0 +1,4 @@
+mixin icon(name)
+    svg.icon(role="img" title= name class= "icon-" + name)&attributes(attributes)
+        use(xlink:href="/icons.svg#icon-" + name)
+
