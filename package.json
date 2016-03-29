@@ -43,6 +43,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-slm": "^1.0.5",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-svg-symbols": "^1.0.0",
     "gulp-util": "^3.0.7",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
