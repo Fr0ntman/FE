@@ -7,7 +7,7 @@ gulp.task('default', () => {
     'build',
     'server',
     'watch'
-  )
+  );
 });
 
 gulp.task('build', ['clean'], () => {
@@ -15,8 +15,9 @@ gulp.task('build', ['clean'], () => {
     [
       'copy',
       'styles',
-      'slim',
+      'templates',
+      'svg-icon',
       'scripts'
     ]
-  )
+  );
 });

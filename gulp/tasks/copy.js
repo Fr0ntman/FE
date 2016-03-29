@@ -2,16 +2,6 @@ const gulp = require('gulp');
 const newer = require('gulp-newer');
 const rename = require('gulp-rename');
 
-gulp.task('copy:html', () => {
-  return gulp.src('**/*.html',
-    {
-      cwd: 'src/html',
-      base: 'src/html'
-    })
-    .pipe(newer('public'))
-    .pipe(gulp.dest('public'))
-});
-
 gulp.task('copy:resource', () => {
   return gulp.src('**/*',
     {
@@ -19,7 +9,7 @@ gulp.task('copy:resource', () => {
       base: 'src/resources'
     })
     .pipe(newer('public'))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('copy:img', () => {
@@ -29,11 +19,10 @@ gulp.task('copy:img', () => {
       base: 'src/images'
     })
     .pipe(newer('public/assets/images'))
-    .pipe(gulp.dest('public/assets/images'))
+    .pipe(gulp.dest('public/assets/images'));
 });
 
 gulp.task('copy', [
-  'copy:html',
   'copy:img',
   'copy:resource'
 ]);

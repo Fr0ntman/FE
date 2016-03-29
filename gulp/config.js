@@ -14,7 +14,7 @@ const path = {
 
 module.exports = {
   path,
-  
+
   styles: {
     entry: [
       'common.sass'
@@ -27,7 +27,7 @@ module.exports = {
     },
     ext: '.min.css'
   },
-  
+
   templates: {
     srcDir: path.templates,
     distDir: path.dist,

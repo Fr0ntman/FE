@@ -23,5 +23,5 @@ gulp.task('styles', () => {
       extname: config.ext
     }))
     .pipe(gulpif(gutil.env.dev, sourcemaps.write()))
-    .pipe(gulp.dest(config.distDir))
+    .pipe(gulp.dest(config.distDir));
 });
