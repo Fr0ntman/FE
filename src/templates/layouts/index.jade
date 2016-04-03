@@ -1,0 +1,54 @@
+include ../helpers/variables
+include ../helpers/mixins
+
+doctype html
+html(lang="ru-RU")
+  include ../partials/head
+
+  body
+    .main(class= mainClass ? mainClass : "")
+      header.header.js-header
+
+        .container.container_full
+
+          +logo().left
+
+          +nav([
+            {
+              id: 0,
+              label: "Курсы",
+              href: jv0,
+              icon: "glass"
+            },
+            {
+              id: 1,
+              label: "Новости",
+              href: "news.html",
+              icon: "news"
+            },
+            {
+              id: 2,
+              label: "О проекте",
+              href: jv0,
+              icon: "info"
+            },
+            {
+              id: 3,
+              label: "Команда",
+              href: jv0,
+              icon: "team"
+            }
+          ])
+        
+      block content
+        
+      footer.footer.footer_bg_tr
+
+        .container.container_full
+          .footer__note * Massachusetts Institute of Technology
+          .footer__social.right
+            .social
+              a.social__link(href= jv0): +icon("twitter")
+              a.social__link(href= jv0): +icon("facebook")
+              a.social__link(href= jv0): +icon("vk")
+              a.social__link(href= jv0): +icon("telegram")
