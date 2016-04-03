@@ -7,7 +7,8 @@ module.exports = {
 
   context: path.join(__dirname, 'src/scripts'),
   entry: {
-    common: './common.js'
+    common: './common.js',
+    news: './news.js'
   },
 
   output: {
@@ -25,7 +26,7 @@ module.exports = {
       path.join(__dirname, 'src/scripts'),
       path.join(__dirname, 'src/templates')
     ],
-    extensions: ['', '.js', '.slm'],
+    extensions: ['', '.js', '.jade'],
     alias: {}
   },
 
