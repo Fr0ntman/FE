@@ -3,10 +3,23 @@ include ../helpers/mixins
 
 doctype html
 html(lang="ru-RU")
-  include ../partials/head
+    include ../partials/head
 
-  body
-    .main(class= mainClass ? mainClass : "")
-      include ../partials/header
-      block content
-      include ../partials/footer
+    body
+        .main(class= mainClass ? mainClass : "")
+            include ../partials/header
+                
+            .content-header
+                block content-header
+            
+            .content.container
+                block content
+                    
+            block content-more
+                    
+            include ../partials/footer
+                
+        #js-go-top.top
+
+        block script
+            script(src="/assets/scripts/common.min.js")
