@@ -14,10 +14,16 @@ gulp.task('build', ['clean'], () => {
   runSequence(
     [
       'copy',
-      'styles',
+      'styles-dependence',
       'templates',
-      'svg-icon',
       'scripts'
     ]
+  );
+});
+
+gulp.task('styles-dependence', () => {
+  runSequence(
+    'svg-icon',
+    'styles'
   );
 });
