@@ -8,17 +8,15 @@ html(lang="ru-RU")
     body
         .main(class= mainClass ? mainClass : "")
             include ../partials/header
-                
-            .content-header
-                block content-header
-            
-            .content.container
-                block content
-                    
+
+            block content-header
+
+            block content
+
             block content-more
-                    
+
             include ../partials/footer
-                
+
         #js-go-top.top
 
         block script
