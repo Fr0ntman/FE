@@ -1,0 +1,14 @@
+extends ../layouts/index
+ 
+block head
+    - title = 'Kursomir'
+    - mainClass = 'bg'
+  
+block content
+    .title(style="text-align: center")
+        +icon("logo-mit").title__logo
+        h2.title__label Массачусетский технологический институт
+        h1.title__heading На русском. Бесплатно. Навсегда.
+        
+        
+        a.button.button_size_big.button_color_red(href= jv0 style="margin-top: 50px") Перейти к курсам  →
