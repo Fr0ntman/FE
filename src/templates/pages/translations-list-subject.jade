@@ -1,0 +1,77 @@
+extends ../layouts/default
+
+block head
+    - title = 'Kursomir'
+    - pageId = 1
+
+block content-header
+    .content-header
+        .container
+            h1 Переводы лекций
+            .content-header__subtitle Массачусетского технологического института
+
+    include ../partials/tab-courses
+
+block content
+    .content.container.container_mt_40
+        .content-inner
+            table.subject
+                thead
+                    tr.subject__header
+                        th.subject__cell Номер
+                        th.subject__cell.subject_w_50p Название курса (select)
+                        th.subject__cell.subject_center Уровень
+                        th.subject__cell.subject_center Лекции
+                        th.subject__cell.subject_center Видео
+                        th.subject__cell.subject_center Перевод
+
+                tbody
+
+                    tr.subject__item
+                        td.subject__cell.subject_accent #6.02
+                        td.subject__cell
+                            span.subject__title Введение в EECS II: Цифровые системы связи
+                            br
+                            span Introduction to EECS II: Digital Communication Systems
+
+                        td.subject__cell.subject_center Студент
+                        td.subject__cell.subject_center 20
+                        td.subject__cell.subject_center 20
+                        td.subject__cell.subject_center.subject_accent 50%
+                    tr.subject__progress-row
+                        td(colspan=6)
+                            .subject__progress: span(data-progress=50 style="width: 50%")
+
+                    tr.subject__item
+                        td.subject__cell.subject_accent #6.263J
+                        td.subject__cell
+                            span.subject__title Введение в EECS II: Цифровые системы связи
+                            br
+                            span Introduction to EECS II: Digital Communication Systems Digital Communication Systems Digital Communication Systems Digital Communication Systems
+
+                        td.subject__cell.subject_center Студент
+                        td.subject__cell.subject_center 20
+                        td.subject__cell.subject_center 20
+                        td.subject__cell.subject_center.subject_accent 75%
+                    tr.subject__progress-row
+                        td(colspan=6)
+                            .subject__progress: span(data-progress=75 style="width: 75%")
+
+                    tr.subject__item
+                        td.subject__cell.subject_accent #18.996
+                        td.subject__cell
+                            span.subject__title Введение в EECS II: Цифровые системы связи Цифровые системы связи Цифровые системы связи
+                            br
+                            span Introduction to EECS II: Digital Communication Systems
+
+                        td.subject__cell.subject_center Выпускник
+                        td.subject__cell.subject_center 14
+                        td.subject__cell.subject_center 2330
+                        td.subject__cell.subject_center.subject_accent 25%
+                    tr.subject__progress-row
+                        td(colspan=6)
+                            .subject__progress: span(data-progress=25 style="width: 25%")
+
+block content-more
+    .content-more.container
+
