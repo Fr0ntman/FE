@@ -1,7 +1,7 @@
 extends ../layouts/default
 
 block head
-    - title = 'Kursomir NEws'
+    - title = 'Kursomir'
     - pageId = 1
 
 block content-header
@@ -11,8 +11,8 @@ block content-header
             .content-header__subtitle Переводы. Анонсы. События
 
 block content
-    .content.container
-        .content__col
+    .content.container.container_mt_40
+        .content-col
 
             .text-news
                 .text-news__date 3 апреля 2016
@@ -61,9 +61,7 @@ block content
 
                     .card-news__descr.js-news-descr
                         | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
-                        | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
-                        | биодвигателей бактерий
-
+                        | Получены качественные снимки, создана 3D-модель и
             .text-news
                 .text-news__date 3 апреля 2016
                 a.text-news__title(href= jv0)
@@ -76,7 +74,7 @@ block content
                     | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
 
 
-        .content__col
+        .content-col
 
             .card-news
                 .card-news__date.js-news-date
