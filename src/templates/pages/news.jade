@@ -11,36 +11,107 @@ block content-header
             .content-header__subtitle Переводы. Анонсы. События
 
 block content
-    .content.content_column_2.container.container_mt_40
+    .content.container.container_mt_40
+        .content-col
 
-        .text-news
-            .text-news__date 3 апреля 2016
-            a.text-news__title(href= jv0)
-             | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                 | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
 
+                .text-news__menu
+                    .dropdown-container
+                        +icon("menu").dropdown-toggle
+                        ul.dropdown
+                            li: a.dropdown__item(href= jv0) Редактировать
+                            li: button.dropdown__item(type="button") Удалить
 
-        .card-news
-            .card-news__date.js-news-date
-                .label 21 марта
-            img.card-news__image(src="/assets/images/content/news-img.jpg")
-            a.card-news-container.js-news-container(href= jv0)
-                .card-news__title.js-news-title
-                    | «Хаббл» изучил кластер с 9 гигантскими звёздами в 100-250 раз массивнее Солнца новость
+            .card-news
+                .card-news__date.js-news-date
+                    .label 21 марта
 
-                .card-news__descr.js-news-descr
+                .card-news__menu
+                    .dropdown-container
+                        +icon("menu").dropdown-toggle
+                        ul.dropdown
+                            li: a.dropdown__item(href= jv0) Редактировать
+                            li: button.dropdown__item(type="button") Удалить
+
+                img.card-news__image(src="/assets/images/content/news-img.jpg")
+                a.card-news-container.js-news-container(href= jv0)
+                    .card-news__title.js-news-title
+                        | «Хаббл» изучил кластер с 9 гигантскими звёздами в 100-250 раз массивнее Солнца новость
+
+                    .card-news__descr.js-news-descr
+                        | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
+                        | биодвигателей бактерий
+
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                    | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
+
+                p.text-news__text
                     | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
                     | биодвигателей бактерий
 
-        .text-news
-            .text-news__date 3 апреля 2016
-            a.text-news__title(href= jv0)
-                | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                 | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
 
-            p.text-news__text
-                | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
-                | биодвигателей бактерий
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                 | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
 
 
+            .card-news
+                .card-news__date.js-news-date
+                    .label 21 марта
+                img.card-news__image(src="/assets/images/content/news-img.jpg")
+                a.card-news-container.js-news-container(href= jv0)
+                    .card-news__title.js-news-title
+                        | «Хаббл» изучил кластер с 9 гигантскими звёздами
+
+                    .card-news__descr.js-news-descr
+                        | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
+                        | Получены качественные снимки, создана 3D-модель и
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                    | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазонемки, создана 3D-модель и
+                    | биодвигателей бактерий проанализирован механизм действия наноразмерных
+
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                    | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
+
+
+        .content-col
+
+            .card-news
+                .card-news__date.js-news-date
+                    .label 21 марта
+                img.card-news__image(src="/assets/images/content/news-img.jpg")
+                a.card-news-container.js-news-container(href= jv0)
+                    .card-news__title.js-news-title
+                        | «Хаббл» изучил кластер с 9 гигантскими звёздами в 100-250 раз массивнее Солнца новость
+
+                    .card-news__descr.js-news-descr
+                        | Получены качественные снимки, создана 3D-модель и проанализирован механизм действия наноразмерных
+                        | биодвигателей бактерий
+
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                    | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
+
+            .text-news
+                .text-news__date 3 апреля 2016
+                a.text-news__title(href= jv0)
+                    | Телескоп впервые снял ударную вспышку сверхновой в видимом диапазоне
 
 block content-more
     .content-more.container
