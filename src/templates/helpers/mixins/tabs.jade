@@ -2,4 +2,7 @@ mixin tabs(list, size)
     .tab-panel.tab-panel_align_center
         .container
             each tab in list
-                .tab(class= tab[1] ? 'tab_state_active' : '', class= size == 'big' ? 'tab_size_big' : '')= tab[0]
+                if tab[1]
+                    .tab.tab_state_active(class= size == 'big' ? 'tab_size_big' : '')= tab[0]
+                else
+                    a.tab(href= jv0, class= size == 'big' ? 'tab_size_big' : '')= tab[0]
