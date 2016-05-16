@@ -2,10 +2,10 @@ include ../helpers/variables
 include ../helpers/mixins
 
 doctype html
-html(lang="ru-RU")
+html(lang="ru-RU", style={'background-color': 'rgba(0, 0, 0, .5)'})
   include ../partials/head
 
-  body
+  body(style={'background-color': 'rgba(0, 0, 0, .5)'})
     .main(class= mainClass ? mainClass : "")
       header.header.js-header
 
