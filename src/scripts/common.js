@@ -1,4 +1,7 @@
 const $ = require('jquery');
+const svg4everybody = require('svg4everybody');
+console.log(svg4everybody);
+svg4everybody();
 
 $(() => {
   const $window = $(window);
