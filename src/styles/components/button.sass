@@ -12,6 +12,9 @@
   border-radius: 40px
   @include transition(border-color color background-color)
 
+  @include breakpoint(max-width 480px)
+    font-size: 14px
+
   &:hover
     border-color: $color-red
     color: $color-red
