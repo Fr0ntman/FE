@@ -1,5 +1,6 @@
 mixin nav(items)
     nav.menu.right
+        a(href="/").menu__logo: +icon("logo")
         each item in items
             - //pageId определяется в head каждой страницы
             if pageId == item.id
@@ -8,3 +9,9 @@ mixin nav(items)
             else
                 a.menu__item(href= item.href)= item.label
                     +icon(item.icon)
+
+        .menu__social.social
+            a.social__link(href= jv0): +icon("twitter")
+            a.social__link(href= jv0): +icon("facebook")
+            a.social__link(href= jv0): +icon("vk")
+            a.social__link(href= jv0): +icon("telegram")

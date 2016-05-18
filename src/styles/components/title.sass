@@ -1,6 +1,9 @@
 .title
   @extend %vh-align
   color: #fff
+  @include breakpoint(max-width 480px)
+    width: calc(100% - 50px)
+    text-align: center
 
   &__logo
     position: absolute
@@ -9,11 +12,30 @@
     @include size(100px, 50px)
     fill: #fff
 
+    @include breakpoint(481px 520px)
+      width: 80px
+      left: 15px
+
+    @include breakpoint(max-width 480px)
+      position: static
+      display: inline-block
+      @include size(75px, 40px)
+
+    @include breakpoint(max-width 340px)
+      width: 65px
+
   &__heading,
   &__label
     padding-left: 125px
     white-space: nowrap
     text-align: left
+
+    @include breakpoint(481px 520px)
+      padding-left: 115px
+
+    @include breakpoint(max-width 480px)
+      padding-left: 90px
+      white-space: normal
 
   &__label
     line-height: 20px
@@ -21,8 +43,43 @@
       weight: 300
       size: 18px
 
+    @include breakpoint(max-width 699px)
+      font-size: 16px
+
+    @include breakpoint(481px 520px)
+      line-height: 30px
+
+    @include breakpoint(max-width 480px)
+      display: inline-block
+      line-height: 20px
+      font-size: 15px
+      padding-left: 10px
+      width: 200px
+      vertical-align: top
+
+
+
   &__heading
     line-height: 45px
     font:
       weight: 500
       size: 36px
+
+    @include breakpoint(700px 767px)
+      font-size: 32px
+
+    @include breakpoint(600px 699px)
+      font-size: 30px
+
+    @include breakpoint(max-width 599px)
+      font-size: 25px
+
+    @include breakpoint(481px 520px)
+      font-size: 22px
+      line-height: 26px
+
+    @include breakpoint(max-width 480px)
+      padding-left: 0
+      line-height: 26px
+      margin-top: 20px
+      text-align: center

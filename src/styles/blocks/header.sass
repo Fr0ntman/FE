@@ -4,3 +4,33 @@
   top: 0
   left: 0
   @include size(100%, 60px)
+  @include breakpoint(max-width 768px)
+    height: 40px
+    background-color: $color-red
+
+  &__logo
+    margin: 8px 0
+    @include breakpoint(769px)
+      display: none
+
+    .icon
+      fill: #fff
+      @include size(88px, 24px)
+
+  &__menu
+    position: absolute
+    top: 0
+    left: 0
+    @include size(40px)
+    @include breakpoint(769px)
+      display: none
+    @include breakpoint(max-width 480px)
+      width: 25px
+
+      .icon
+        left: 0
+        transform: translate(-25%, -50%)
+
+    .icon
+      @extend %vh-align
+      fill: #fff

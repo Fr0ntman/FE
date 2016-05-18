@@ -5,6 +5,7 @@
   line-height: 30px
   background-color: #ffffff
   @include size(100%, 60px)
+  //@include breakpoint(max-width 768px)
 
   &_bg_tr
     background-color: transparent
@@ -15,6 +16,14 @@
       weight: 300
       size: 14px
     color: rgba(#fff, .5)
+    @include breakpoint(max-width 768px)
+      padding: 15px 0
+    @include breakpoint(max-width 480px)
+      padding: 5px 0
+      line-height: 20px
+      font-size: 12px
+      text-align: center
+      display: block
 
   &__logo
     padding: 15px 0
@@ -33,3 +42,22 @@
     line-height: 60px
     color: $color-gray
     text-align: center
+
+  &__social
+    @include breakpoint(max-width 480px)
+      float: none
+
+      .social
+        padding: 5px 40px
+        line-height: 0
+        text-align: justify
+
+        &:after
+          @include size(100%, 0)
+          visibility: hidden
+          overflow: hidden
+          content: ''
+          display: inline-block
+
+        .icon
+          @include size(20px)

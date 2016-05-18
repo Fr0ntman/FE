@@ -17,6 +17,13 @@ body
   padding-bottom: 60px
   width: 100%
   min-height: 100%
+  @include transition(transform)
+
+  @include breakpoint(max-width 320px)
+    min-width: 320px
+
+  &_menu_open
+    transform: translateX(220px)
 
 .container
   position: relative
@@ -33,6 +40,8 @@ body
   &_full
     max-width: none
     padding: 0 40px
+    @include breakpoint(max-width 480px)
+      padding: 0 25px
 
 .bg
   background:

@@ -1,3 +1,12 @@
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint.scss"
+@import "../../node_modules/compass-sass-mixins/lib/compass.sass"
+
+@include breakpoint-set('to ems', true)
+@include breakpoint-set('base font size', 14px)
+@include breakpoint-set('default media', screen)
+
+$base-font-size: 14px
+
 @import "helpers/mixins"
 @import "helpers/variables"
 @import "helpers/svg-sprite"
@@ -8,22 +17,9 @@
 
 // Импорты в порядке увеличения специфичности
 
-@import "blocks/header"
-@import "blocks/footer"
-@import "blocks/content"
-@import "blocks/card-news"
-@import "blocks/text-news"
-@import "blocks/news"
-@import "blocks/description"
-@import "blocks/sidebar"
-@import "blocks/comment"
-@import "blocks/course-list"
-@import "blocks/subject"
-
-@import "components/menu"
+@import "components/icons"
 @import "components/logo"
 @import "components/button"
-@import "components/icons"
 @import "components/social"
 @import "components/title"
 @import "components/heading"
@@ -37,3 +33,16 @@
 @import "components/dropdown"
 @import "components/collaborator"
 @import "components/order"
+@import "components/menu"
+
+@import "blocks/header"
+@import "blocks/footer"
+@import "blocks/content"
+@import "blocks/card-news"
+@import "blocks/text-news"
+@import "blocks/news"
+@import "blocks/description"
+@import "blocks/sidebar"
+@import "blocks/comment"
+@import "blocks/course-list"
+@import "blocks/subject"
