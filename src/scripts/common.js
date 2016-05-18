@@ -1,4 +1,5 @@
 const $ = require('jquery');
+const menu = require('./menu');
 
 $(() => {
   const $window = $(window);
@@ -20,6 +21,7 @@ $(() => {
 
   $window.scroll($.proxy(scrollTop, 'toggleBtn'));
   scrollTop.$button.on('click', $.proxy(scrollTop, 'scroll'));
+  menu.init();
 });
 
 

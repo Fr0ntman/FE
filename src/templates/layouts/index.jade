@@ -6,11 +6,8 @@ html(lang="ru-RU", style={'background-color': 'rgba(0, 0, 0, .5)'})
   include ../partials/head
 
   body(style={'background-color': 'rgba(0, 0, 0, .5)'})
-    .main(class= mainClass ? mainClass : "")
+    .main.js-main(class= mainClass ? mainClass : "")
       header.header.js-header
-
-        .header__menu
-          +icon("menu")
 
         .container.container_full
 
@@ -44,18 +41,23 @@ html(lang="ru-RU", style={'background-color': 'rgba(0, 0, 0, .5)'})
             }
           ])
 
+          .header__menu.js-menu-toggle
+            +icon("menu")
+
       block content
 
       footer.footer.footer_bg_tr
 
         .container.container_full
-          .footer__note * Massachusetts Institute of Technology
+
           .footer__social.right
             .social
               a.social__link(href= jv0): +icon("twitter")
               a.social__link(href= jv0): +icon("facebook")
               a.social__link(href= jv0): +icon("vk")
               a.social__link(href= jv0): +icon("telegram")
+
+          .footer__note * Massachusetts Institute of Technology
 
     block script
       script(src="/assets/scripts/common.min.js")
