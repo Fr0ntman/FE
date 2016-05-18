@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/TijdeveloperOpenMIT/FE.git"
   },
+  "scripts": {
+    "test": "echo \"Error: Tests will be here soon\" && exit 1"
+  },
   "author": "",
   "license": "MIT",
   "bugs": {
