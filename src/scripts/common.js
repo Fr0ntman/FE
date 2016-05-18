@@ -1,4 +1,8 @@
 const $ = require('jquery');
+const menu = require('./menu');
+const svg4everybody = require('svg4everybody');
+
+svg4everybody();
 
 $(() => {
   const $window = $(window);
@@ -20,6 +24,7 @@ $(() => {
 
   $window.scroll($.proxy(scrollTop, 'toggleBtn'));
   scrollTop.$button.on('click', $.proxy(scrollTop, 'scroll'));
+  menu.init();
 });
 
 

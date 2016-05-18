@@ -2,7 +2,11 @@ header.header.js-header
 
   .container
 
+    .header__menu
+      +icon("menu")
+
     +logo().left
+    a(href="/"): +icon("logo").header__logo-modile.left
 
     +nav([
       {

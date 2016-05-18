@@ -1,6 +1,15 @@
 .menu
   font-family: $font-roboto
   font-size: 0
+  @include breakpoint(max-width 768px)
+    position: fixed
+    z-index: 1
+    top: 0
+    left: 0
+    @include size(220px, 100%)
+    transform: translateX(-100%)
+    background-color: #333
+    transition: all .3s ease
 
   &__item
     position: relative
@@ -10,8 +19,12 @@
     font-size: 16px
     font-weight: 400
     color: #fff
+    border: none
     text-decoration: none
     @include transition(color)
+    @include breakpoint(max-width 768px)
+      display: block
+      margin: 0 20px
 
     &:before
       position: absolute
@@ -24,6 +37,11 @@
       opacity: 0
       will-change: opacity, transform
       transition: opacity .3s ease, transform .3s ease
+
+      @include breakpoint(max-width 768px)
+        @include size(3px, 100%)
+        left: auto
+        right: -20px
 
     .icon
       position: absolute
@@ -43,6 +61,28 @@
       .icon
         fill: $color-red
 
-
     & + &
-      margin-left: 24px
+      @include breakpoint(769px)
+        margin-left: 25px
+
+  &__logo
+    display: none
+    padding: 8px 20px
+    fill: #fff
+    opacity: .5
+    @include breakpoint(max-width 768px)
+      display: block
+
+    .icon
+      @include size(88px, 24px)
+
+  &__social
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    opacity: .5
+    padding-left: 20px
+    display: none
+    @include breakpoint(max-width 768px)
+      display: block

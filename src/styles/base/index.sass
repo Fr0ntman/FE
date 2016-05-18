@@ -5,6 +5,7 @@ html,
 body
   min-height: 100%
   height: 100%
+  background-color: #efefef
   font:
     family: $font-roboto
     weight: 400
@@ -16,7 +17,13 @@ body
   padding-bottom: 60px
   width: 100%
   min-height: 100%
-  background-color: #efefef
+  @include transition(transform)
+
+  @include breakpoint(max-width 320px)
+    min-width: 320px
+
+  &_menu_open
+    transform: translateX(220px)
 
 .container
   position: relative
@@ -33,6 +40,8 @@ body
   &_full
     max-width: none
     padding: 0 40px
+    @include breakpoint(max-width 480px)
+      padding: 0 25px
 
 .bg
   background:
