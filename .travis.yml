@@ -1,3 +1,5 @@
 language: node_js
 node_js:
   - "5"
+notifications:
+  slack: openmit:0SDhkKvoVn8Why3xVsYQ9Zk1
