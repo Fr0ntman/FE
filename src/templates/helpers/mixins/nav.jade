@@ -9,3 +9,9 @@ mixin nav(items)
             else
                 a.menu__item(href= item.href)= item.label
                     +icon(item.icon)
+
+        .menu__social.social
+            a.social__link(href= jv0): +icon("twitter")
+            a.social__link(href= jv0): +icon("facebook")
+            a.social__link(href= jv0): +icon("vk")
+            a.social__link(href= jv0): +icon("telegram")
