@@ -1,5 +1,6 @@
 mixin nav(items)
     nav.menu.right
+        a(href="/").menu__logo: +icon("logo")
         each item in items
             - //pageId определяется в head каждой страницы
             if pageId == item.id
